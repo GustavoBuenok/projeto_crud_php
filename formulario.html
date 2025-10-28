@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+
+    <form action="salvar.php" method="post">
+        <p>
+            <label>Nome<br>
+                <input type="text" name="nome" required>
+            </label>
+        </p>
+        <p>
+            <label>E-mail: <br>
+                <input type="email" name="email" required>
+            </label>
+        </p>
+        <p>
+            <label>Telefone:<br>
+                <input type="text" name="telefone" required placeholder="(11) 91234-5678">
+            </label>
+        </p>
+        <button>Enviar</button>
+    </form>
+    
+</body>
+</html>
