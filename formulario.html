@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulario</title>
 </head>
 <body>
+<main class="container">
+<section class="form-section">  
     <h1>Cadastro</h1>
 
-    <form action="salvar.php" method="post">
-        <p>
-            <label>Nome<br>
-                <input type="text" name="nome" required>
+    <form id="form-cadastro" action="salvar.php" method="post">
+        <div class="form-group">
+            <label for="nome-cadastro">Nome<br>
+                <input type="text" id="nome-cadastro" name="nome" placeholder="Seu nome"  required>
             </label>
-        </p>
-        <p>
-            <label>E-mail: <br>
-                <input type="email" name="email" required>
+        </div>    
+        <div class="form-group">
+            <label for="email-cadastro">E-mail: <br>
+                <input type="email" id="email-cadastro" name="email" required placeholder="Ex: seuemail@dominio.com">
             </label>
-        </p>
-        <p>
-            <label>Telefone:<br>
-                <input type="text" name="telefone" required placeholder="(11) 91234-5678">
+        </div>
+        <div class="form-group">
+            <label for="telefone-cadastro">Telefone:<br>
+                <input type="text" id="telefone-cadastro" name="telefone" required placeholder="(11) 91234-5678">
             </label>
-        </p>
-        <button>Enviar</button>
+        </div>
+        <button type="submit" class="botao">Enviar</button>
     </form>
-    
+</section> 
+</main> 
 </body>
 </html>

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 20px auto;
+    max-width: 900px;
+    background: var(--background-gradient);
+    color: var(--text-dark);
+    padding: 10px;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+
+h1 {
+    color: var(--text-dark);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+:root {
+    --petz-green: #00BFFF;
+    --petz-green-light: #87CEFA;
+    --text-dark: #2c3e50;
+    --text-light: #666;
+    --background-gradient: linear-gradient(135deg, #000000, #A9A9A9);
+    --border-color: #eee;
+    --white: #ffffff;
+    --error-red: #e74c3c;
+    --success-green: #2ecc71;
+}
+
+.form-section {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    border-radius: 16px;
+    margin-top: 30px;
+    text-align: left;
+    box-shadow: 0 0 12px rgba(39, 174, 96, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.form-group input {
+    width: 97%;
+    padding: 12px;
+    border: 1.5px solid var(--petz-green);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--petz-green-light);
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.2);
+}
+
+.form-group .input-error {
+    border-color: var(--error-red);
+}
+
+.form-group .mensagem-erro {
+    color: var(--error-red);
+    font-size: 0.85em;
+    height: 18px;
+    display: block;
+    margin-top: 5px;
+}
+
+.botao {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 12px 28px;
+    border: none;
+    background-color: var(--petz-green);
+    color: var(--white);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.botao:hover {
+    background-color: var(--petz-green-light);
+    transform: translateY(-2px);
+}
